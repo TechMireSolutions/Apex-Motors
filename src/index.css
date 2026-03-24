@@ -1,9 +1,41 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Product+Sans:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap");
 
-@layer base {
-  body {
-    @apply bg-slate-50 text-slate-900 font-sans;
-  }
+@import "tailwindcss";
+
+:root {
+  --font-product-sans: "Product Sans", "Roboto", sans-serif;
+  --bg-color: #f8f9fa;
+  --surface-color: #ffffff;
+  --primary-blue: #2563eb;
+  --success-green: #15803d;
+  --warning-amber: #d97706;
+  --text-main: #1f2937;
+  --text-secondary: #4b5563;
+  --border-light: #e5e7eb;
+}
+
+body {
+  font-family: var(--font-product-sans);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #94a3b8;
 }

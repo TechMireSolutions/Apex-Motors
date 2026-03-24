@@ -1,74 +1,16 @@
-# PulseLine - Digital Healthcare Core
+# React + Vite
 
-PulseLine is a modern, high-fidelity Doctor-Patient Interaction System built with **React 19**, **Vite**, and **Tailwind CSS**. It provides a seamless, professional experience for both healthcare providers and patients through a dual-view dashboard.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 🚀 Key Features
+Currently, two official plugins are available:
 
-### 👤 Patient Experience
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-- **Smart Dashboard**: Overview of upcoming visits and medical status.
-- **Appointment Management**: Interactive calendar to find availability and book appointments.
-- **Easy Check-in**: Streamlined digital check-in process for upcoming visits.
-- **Secure Records & Inbox**: Dedicated sections for medical records and secure communication with providers.
+## React Compiler
 
-### 🩺 Doctor Experience
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-- **Daily Roster**: Comprehensive schedule of all appointments for the day.
-- **Patient Search**: Quickly find patient charts by name or Provider ID (MRN).
-- **Encounter Management**: Update patient status (Waiting, In Progress, Scheduled) and open clinical charts.
-- **KPI Analytics**: Real-time tracking of roster capacity, waiting count, and pending lab reviews.
+## Expanding the ESLint configuration
 
-## 🛠️ Tech Stack
-
-- **Framework**: [React 19](https://react.dev/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Utilities**: `clsx`, `tailwind-merge`
-
-## 🏁 Getting Started
-
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) (latest LTS recommended)
-- [npm](https://www.npmjs.com/) (installed with Node.js)
-
-### Installation
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone <repository-url>
-   cd doctor-dashboard
-   ```
-
-2. **Install dependencies**:
-
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**:
-
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**:
-   Navigate to `http://localhost:5173` (or the port shown in your terminal).
-
-## 📁 Project Structure
-
-```text
-src/
-├── components/
-│   ├── PatientView.jsx   # Dashboard and tools for patients
-│   └── DoctorView.jsx    # Professional interface for healthcare providers
-├── App.jsx               # Main container with view switching logic
-├── main.jsx              # Entry point
-└── index.css             # Global styles and Tailwind directives
-```
-
----
-
-_Note: This project was developed as a high-end UI/UX demonstration of modern healthcare software._
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
